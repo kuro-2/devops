@@ -5,21 +5,8 @@ class Bank:
         self.balance = balance
 
     def deposit(self, amount):
-        self.balance += amount
-        return self.balance
-
-    def withdraw(self, amount):
-        if amount > self.balance:
-            print("Balance Amount is less, No withdrawal ")
-        else:
-            self.balance -= amount
-        return self.balance
-    def Transfer(self):
-        #Function under construction
-        pass
-    def Transactions_History(self):
-        # Function under construction
-        pass
+        self.balance += amount 
+    
 
 name = input("Enter Name:")
 b = Bank(name)  # b is the instance of Bank class
